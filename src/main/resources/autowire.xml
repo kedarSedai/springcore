@@ -5,12 +5,18 @@
 
     <bean class="com.example.testsring.AutoWire.Student"  name="student">
         <property name="firstName" value="java"/>
+
+        <constructor-arg name="firstName" value="c++"/>
     </bean>
 
-    <bean class="com.example.testsring.AutoWire.Address" name="address" autowire="constructor">
+    <bean class="com.example.testsring.AutoWire.Address" name="address" autowire="byName">
 <!--        <property name="streetAddress"-->
+<!--        <property name="student" ref="student"/>-->
+<!--        <property name="streetAddress" value="aa"/>-->
 
-        <constructor-arg name="streetAddress" value="12"/>
+        <constructor-arg name="streetAddress" value="kathmandu"/>
         <constructor-arg name="student" ref="student"/>
     </bean>
+
+<!--    <bean-->
 </beans>

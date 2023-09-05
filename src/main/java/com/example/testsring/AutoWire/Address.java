@@ -1,8 +1,11 @@
 package com.example.testsring.AutoWire;
 
+import com.example.testsring.ObjectiInject.A;
+
 public class Address {
     private String streetAddress;
     private Student student;
+
 
     public Address(String streetAddress, Student student) {
 
@@ -10,6 +13,9 @@ public class Address {
         this.student = student;
         System.out.println("calling from constructor: ");
     }
+
+
+//    Address address = new Address();
 
     public String getStreetAddress() {
         return streetAddress;
