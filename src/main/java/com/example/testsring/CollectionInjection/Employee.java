@@ -14,7 +14,6 @@ public class Employee {
     private Set<String> city;
     private Map<String, String>  college;
 
-
     public Map<String, String> getCollege() {
         return college;
     }

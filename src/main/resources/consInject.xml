@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean class="com.example.testsring.ConstructorInjection.Student" name="student">
+        <constructor-arg name="student_id" value="12" type="float" />
+        <constructor-arg name="zip" value="4600" type="int" />
+
+<!--        <property name="student_id"-->
+<!--        -->
+<!--        <property name="student_id" value=""/>-->
+    </bean>
+</beans>
