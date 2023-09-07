@@ -1,6 +1,8 @@
 package com.example.testsring.ObjectiInject;
 
-public class A {
+import java.io.Serializable;
+
+public class A implements Serializable {
 
     private int a;
     private int b;

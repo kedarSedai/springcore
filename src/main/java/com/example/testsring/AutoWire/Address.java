@@ -1,9 +1,16 @@
 package com.example.testsring.AutoWire;
 
 import com.example.testsring.ObjectiInject.A;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 
 public class Address {
+
+
+    @Value("kathmandu")
     private String streetAddress;
+
+
     private Student student;
 
 

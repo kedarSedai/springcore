@@ -8,7 +8,7 @@ public class MainAutoWired {
 //        1. // configL
         ApplicationContext applicationContext = new ClassPathXmlApplicationContext("autowireannotatiaon.xml");
 //        Organization organization = (Organization) applicationContext.getBean("organization");
-       Organization organization = (Organization) applicationContext.getBean("organization");
+        Organization organization = (Organization) applicationContext.getBean("organization");
         System.out.println(organization);
     }
 }

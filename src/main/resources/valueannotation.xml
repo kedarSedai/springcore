@@ -4,19 +4,10 @@
        xmlns:context="http://www.springframework.org/schema/context"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
 
-    <context:annotation-config/>
+    <context:property-placeholder location="classpath:application.properties"/>
 
-    <bean class="com.example.testsring.AutoWIreAnnotation.Employee" name="employee">
-        <property name="emp_id" value="12"/>
-        <property name="emp_name" value="java"/>
+    <bean class="com.example.testsring.JavaClass.Students" name="students">
+        <property name="id" value="${student.id}"/>
+        <property name="name" value="${student.name}"/>
     </bean>
-
-    <bean class="com.example.testsring.AutoWIreAnnotation.Organization" name="organization">
-        <constructor-arg name="org_id" value="122"/>
-
-<!--        <property name="org_id" value="12"/>-->
-        <!--      <property name="employee" ref="employee"/>-->
-    </bean>
-
-
 </beans>
